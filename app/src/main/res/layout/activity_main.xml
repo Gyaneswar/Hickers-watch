@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Hikers watch"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/textViewlat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Latitude : 12.04"
+        android:paddingLeft="3dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewlong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewlat"
+        android:text="Longitude : 50.03"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/textViewalt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewlong"
+        android:text="Altitude : 50"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/textViewadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewacc"
+        android:text="Address : New york"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="3dp"/>
+
+    <TextView
+        android:id="@+id/textViewacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewalt"
+        android:text="Accuracy : 20"
+        android:textSize="20sp"
+        android:paddingTop="10dp"
+        android:paddingLeft="3dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Show me on map"
+        android:onClick="show"/>
+</android.widget.RelativeLayout>
